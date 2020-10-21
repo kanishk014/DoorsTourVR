@@ -1,9 +1,17 @@
 <!doctype html>
 <html>
     <head>
+        
         <title>DoorsTour Test</title>
+        <com.google.vr.sdk.widgets.pano.VrPanoramaView
+            android:id="@+id/pano_view"
+            android:layout_margin="5dip"
+            android:layout_width="match_parent"
+            android:scrollbars="@null"
+            android:layout_height="250dip" />
         <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
+
     </head>
     <body>
         <h1> DoorsTour 360 degree tour using Google VR</h1> 
@@ -51,6 +59,13 @@
             }
 
             function onHotspotClick(e) {
+                
+                 vrView = new VRView.Player('#vrview', {
+                    image: 'https://i.ibb.co/QdDb6gW/sample2.jpg',
+                    width: '100%',
+                    height: '450px',
+                    is_stereo: false,
+                });
                 vrView.getPosition();
                 console.log('onHotspotClick', e.id);
             }
