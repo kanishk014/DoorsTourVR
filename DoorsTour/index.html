@@ -4,15 +4,9 @@
         
         <title>DoorsTour Test</title>
          <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-         <meta name="mobile-web-app-capable" content="yes">
+         <!-- <meta name="mobile-web-app-capable" content="yes">
          <meta name="apple-mobile-web-app-capable" content="yes" />
-         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-         <com.google.vr.sdk.widgets.pano.VrPanoramaView
-            android:id="@+id/pano_view"
-            android:layout_margin="5dip"
-            android:layout_width="match_parent"
-            android:scrollbars="@null"
-            android:layout_height="250dip" />
+         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> -->
         <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -20,7 +14,7 @@
     <body>
         <h1> DoorsTour 360 degree tour using Google VR</h1> 
         <div id='vrview'></div>
-        <img src="https://i.ibb.co/w4DTRr3/door.png" width="300" height="100"> 
+        <img id="sample1" src="https://i.ibb.co/w4DTRr3/door.png" width="300" height="100"> 
         <script type="text/javascript">
             var vrView;
             window.addEventListener('load', onVrViewLoad);
@@ -64,12 +58,6 @@
 
             function onHotspotClick(e) {
                 
-                 vrView = new VRView.Player('#vrview', {
-                    image: 'https://i.ibb.co/QdDb6gW/sample2.jpg',
-                    width: '100%',
-                    height: '450px',
-                    is_stereo: false,
-                });
                 vrView.getPosition();
                 console.log('onHotspotClick', e.id);
             }

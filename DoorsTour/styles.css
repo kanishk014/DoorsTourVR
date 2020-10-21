@@ -7,3 +7,10 @@ h1 {
 
 	padding-left: 325px;
 }
+
+@media only screen and (max-width: 629px) {
+  #sample1 {
+    max-width: none ;
+    margin-top: calc((202px - 42px)/2) ;
+    transform: rotate(270deg);
+  }
