@@ -9,7 +9,7 @@ h1 {
 }
 
 @media only screen and (max-width: 629px) {
-  #sample1 {
+  #vrview {
     max-width: none ;
     margin-top: calc((202px - 42px)/2) ;
     transform: rotate(270deg);
