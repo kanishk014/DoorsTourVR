@@ -1,11 +1,14 @@
 img {
 
-	padding-left: 500px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
 }
 
 h1 {
 
-	padding-left: 325px;
+	text-align: center;
 }
 
 /*@media only screen and (max-width: 812px) {
