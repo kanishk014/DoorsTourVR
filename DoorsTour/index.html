@@ -1,12 +1,8 @@
 <!doctype html>
 <html>
     <head>
-        
         <title>DoorsTour Test</title>
          <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-         <meta name="mobile-web-app-capable" content="yes">
-         <meta name="apple-mobile-web-app-capable" content="yes" />
-         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -45,7 +41,7 @@
                 vrView.addHotspot('lobby', {
                 pitch: 10, // In degrees. Up is positive.
                 yaw: 75, // In degrees. To the right is positive.
-                radius:   0.05, // Radius of the circular target in meters.
+                radius: 0.05, // Radius of the circular target in meters.
                 distance: 2, // Distance of target from camera in meters.
     });
 });
@@ -53,14 +49,14 @@
     			if (event.id == 'dining-room') {
         		vrView.setContent({
             	image: 'https://i.ibb.co/3frd9k1/sample3.jpg',
+            	width: '100%',
+                height: '450px',
             	is_stereo: false,
         });
     }
 });
 }				
 				
-
-
             function onGetPosition(e) {
                 console.log('position',e.id);
             }
