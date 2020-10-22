@@ -41,7 +41,7 @@
                 distance: 2, // Distance of target from camera in meters.
     });          
 });             
-                 vrView.on('ready',function(){
+                vrView.on('ready',function(){
                 vrView.addHotspot('lobby', {
                 pitch: 10, // In degrees. Up is positive.
                 yaw: 75, // In degrees. To the right is positive.
@@ -49,7 +49,16 @@
                 distance: 2, // Distance of target from camera in meters.
     });
 });
-}
+                vrView.on('click', function(event) {
+    			if (event.id == 'dining-room') {
+        		vrView.setContent({
+            	image: 'https://i.ibb.co/3frd9k1/sample3.jpg',
+            	is_stereo: false,
+        });
+    }
+});
+}				
+				
 
 
             function onGetPosition(e) {
