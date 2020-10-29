@@ -68,7 +68,8 @@
                 radius: 0.05, // Radius of the circular target in meters.
                 distance: 2, // Distance of target from camera in meters.
     }); 
-                vrView.on('click', function(event) {
+                
+});             vrView.on('click', function(event) {
                 if (event.id == 'living-room') {
                 vrView.setContent({
                 image: 'https://i.ibb.co/QdDb6gW/sample1.jpg',
@@ -78,7 +79,6 @@
         });
     }          
 });
-});             
 
 }               
             function onGetPosition(e) {
